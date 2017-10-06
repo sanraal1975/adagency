@@ -1,0 +1,22 @@
+<?php
+
+use yii\helpers\Html;
+
+
+/* @var $this yii\web\View */
+/* @var $model app\models\EstatComandes */
+
+$this->title = 'Create Estat Comandes';
+$this->params['breadcrumbs'][] = ['label'=>'Administrador', 'url'=>Yii::getalias('@web')."/admin/site"];
+$this->params['breadcrumbs'][] = ['label' => 'Estat Comandes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="estat-comandes-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
